@@ -17,7 +17,8 @@
         </ul>
       </nav>
       <div class="login">
-        <a href="#">Registrate</a>
+        <a href="#">Registro</a>
+
         <a href="#">Iniciar Sesión</a>
       </div>
     </section>
@@ -29,40 +30,53 @@
 
 
 <style>
-.barra_menu {
+ .barra_menu{
   /* BARRA MENU COMPLETA*/
-  background-color: aquamarine;
+  background-color: burlywood;
   text-decoration-line: none;
-  
-  
-  
 }
-.menu ul li{
+
+
+nav ul li{
   /* Menu Navegacion*/
+  display: flex; 
   float: left; /* Hacemos que el menu se muestre horizontal */
-  
-  
   list-style-type: none; /* Quita los puntos de las listas */
-   
+  justify-content: center;
+  
+ 
+  
 }
 
 .menu ul li a {
-  
   text-decoration-line: none;
+  margin: 10px;
+  padding: 8px;
+  /*justify-content: center;*/
+  
+  
+
 }
 .login a {
   /* REGISTRO DE USUARIOS*/
-  
+
   display: flex;
   flex-direction: row;
   text-decoration-line: none;
-   
+  margin: 10px;
+  padding: 8px;
 }
-div .login{
+div .login {
   display: flex;
- justify-content: flex-end; 
-}
+  justify-content: flex-end;
 
+
+
+}
+a:hover {
+  border: 1px solid black;
+  border-radius: 20px;
+}
 
 img {
   display: flex;
