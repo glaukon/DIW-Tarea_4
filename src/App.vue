@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import centro from "./components/centro.vue";
 import logo from "./components/logo.vue";
+import centro from "./components/centro.vue";
 import pie from "./components/pie.vue";
 
 export default {
