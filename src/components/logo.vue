@@ -8,11 +8,10 @@
     <nav class="menu">
       <ul>
         <li><a href="#">Inicio</a></li>
-        <li><a href="#">Prueba 1</a></li>
-        <li><a href="#">Prueba 2</a></li>
-        <li><a href="#">Prueba 3</a></li>
-        <li><a href="#">Prueba 4</a></li>
-        <li><a href="#">Prueba 5</a></li>
+        <li><a href="#">Sillas Oficina</a></li>
+        <li><a href="#">Sillas Ergonomicas</a></li>
+        <li><a href="#">Sillas Giratorias</a></li>
+        <li><a href="#">Sillas Domesticas</a></li>
       </ul>
       <div class="login">
         <ul>
@@ -28,11 +27,14 @@
 </script>
 
 
-<style>
+<style scoped>
+
+
 *{
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  color: #E46A3A;
 }
 .barra_menu nav {
  
@@ -41,7 +43,10 @@
   align-items: center;
   justify-content: center;
   height: 90px;
-  background-color: cyan;
+  background-color: #087E8B;
+  
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   
 }
 div .login{
@@ -53,6 +58,8 @@ div .login{
   width: auto;
   height: auto;
   margin-left: auto;
+  
+  
 }
 
 
@@ -61,6 +68,8 @@ nav ul li {
   /* Menu Navegacion*/
   float: left; /* Hacemos que el menu se muestre horizontal */
   list-style-type: none; /* Quita los puntos de las listas */
+
+  
 }
 
 .menu ul li a {
@@ -70,9 +79,14 @@ nav ul li {
   margin-right: 0px;
   padding: 8px;
   font-size: large;
+  
 }
 a:hover{
-  border: solid 2px white;
+
+ /* border: solid 2px #E46A3A;
+  border-radius: 10px;*/
+  /*background: #E46A3A;*/
+  color: white;
 }
 
 
