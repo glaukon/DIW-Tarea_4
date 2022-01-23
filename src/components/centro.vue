@@ -8,23 +8,41 @@
         width="320"
       />
       <div class="minifotos">
-        <img src="../assets/oficina_2.jpg"
-        alt="Silla Oficina"
-        height="150"
-        width="150">
-         <img src="../assets/oficina_3.jpg"
-        alt="Silla Oficina"
-        height="150"
-        width="150">
-         <img src="../assets/oficina_4.jpg"
-        alt="Silla Oficina"
-        height="150"
-        width="150">
+        <img
+          src="../assets/oficina_2.jpg"
+          alt="Silla Oficina"
+          height="150"
+          width="150"
+        />
+        <img
+          src="../assets/oficina_3.jpg"
+          alt="Silla Oficina"
+          height="150"
+          width="150"
+        />
+        <img
+          src="../assets/oficina_4.jpg"
+          alt="Silla Oficina"
+          height="150"
+          width="150"
+        />
       </div>
     </div>
-
     <div class="descripcion">
-      <h2>Descripcion Articulo</h2>
+      <div class="datos_producto">
+        <div>
+          <h1>Silla de Oficina Ergonomica Negra</h1>
+        </div>
+        <div class="precio_descuento">
+          <div><label>Precio</label>
+          <label>Descuento</label></div>
+          <div><strong>166.50 €</strong>
+          <strong>30%</strong></div>
+        </div>
+        <div class="btncomprar">
+          <input class="cantidad" type="submit" name="name" value="Comprar" />
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -36,38 +54,38 @@ export default {};
 <style scoped >
 .container_producto,
 div .container_producto {
-  border: solid 1px #E46A3A;;
+  border: solid 1px #e46a3a;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 66px;
-  width: auto;
+
 }
 
 .foto {
-  border: solid 1px #E46A3A;
-  
+  border: solid 1px #e46a3a;
+
   /*display: flex;
   flex-direction: row;
   justify-content: center;
   background-color: aqua;*/
 }
-.descripcion {
-  
-  /*display: flex;*/
-  /*flex-direction: row;*/
-  /*justify-content: right;*/
-  /*background-color: #6e8894;*/
 
+div.precio_descuento {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  /*align-items: center;*/
+  margin: 10px;
 }
-.minifotos{
+
+.minifotos {
   display: flex;
   flex-direction: row;
   margin: 10px;
 }
-.minifotos img{
+.minifotos img {
   margin: 10px;
   padding: 10px;
-  border: 1px solid #E46A3A;
+  border: 1px solid #e46a3a;
 }
 </style>
