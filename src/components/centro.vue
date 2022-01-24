@@ -29,55 +29,71 @@
       </div>
     </div>
     <div class="descripcion">
-      <div class="datos_producto">
-        <div>
-          <h1>Silla de Oficina Ergonomica Negra</h1>
+      <section id="producto-datos">
+        <h1>Silla de Oficina Ergonomica Negra</h1>
+        <h2>166.50 €<span class="iva">Descuento:30%</span></h2>
+        <div class="wrapper">
+          <button
+            class="btn"
+            @click="cambiarContador('-1')"
+            type="button"
+            name="button"
+          >
+            -
+          </button>
+          <input class="cantidad" type="text" name="name" :value="contador" />
+          <button
+            class="btn"
+            @click="cambiarContador('1')"
+            type="button"
+            name="button"
+          >
+            +
+          </button>
         </div>
-        <div class="precio_descuento">
-          <div><label>Precio</label>
-          <label>Descuento</label></div>
-          <div><strong>166.50 €</strong>
-          <strong>30%</strong></div>
-        </div>
-        <div class="btncomprar">
-          <input class="cantidad" type="submit" name="name" value="Comprar" />
-        </div>
-      </div>
+        <br />
+        <button class="boton">
+          <span class="material-icons"></span> AÑADIR CARRITO </button>
+      </section>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  Name: 'ProductoDatos',
+    data () {
+        return {
+            contador: 1
+        }
+    },
+    methods: {
+        cambiarContador(num) {
+            this.contador += +num;
+            if (!isNaN(this.contador) && (this.contador < 0)) {
+              this.contador = 0
+            }
+        }
+    }
+}
+
 </script>
 
 <style scoped >
 .container_producto,
 div .container_producto {
-  border: solid 1px #e46a3a;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-
-}
-
-.foto {
-  border: solid 1px #e46a3a;
-
-  /*display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: aqua;*/
+  justify-content: space-evenly;
 }
 
 div.precio_descuento {
   display: flex;
   flex-direction: column;
-  justify-content:space-between;
+  justify-content: space-between;
   /*align-items: center;*/
   margin: 10px;
 }
-
 .minifotos {
   display: flex;
   flex-direction: row;
@@ -86,6 +102,39 @@ div.precio_descuento {
 .minifotos img {
   margin: 10px;
   padding: 10px;
-  border: 1px solid #e46a3a;
+  /*border: 1px solid #e46a3a;*/
+}
+section#producto-datos {
+  flex: 1 1 18rem;
+}
+h1 {
+  font-size: 2.2rem;
+}
+h2 {
+  font-size:1.7rem;
+  color: #1abc9c;
+}
+span.iva {
+  font-size:1rem;
+  font-weight: normal;
+  color: #282828
+}
+.wrapper {
+  height: 2rem;
+  display: flex;
+}
+.cantidad {
+  border: none;
+  text-align: center;
+  width: 2rem;
+  font-size: 1.2rem;
+  border: 1px solid #d8d8d8;
+}
+.btn {
+  border: 1px solid #d8d8d8;
+  width: 1.8rem;
+}
+button:focus, input:focus {
+  outline: 0;
 }
 </style>
