@@ -11,20 +11,26 @@
         <img
           src="../assets/oficina_2.jpg"
           alt="Silla Oficina"
-          height="150"
-          width="150"
+          height="100"
+          width="100"
         />
         <img
           src="../assets/oficina_3.jpg"
           alt="Silla Oficina"
-          height="150"
-          width="150"
+          height="100"
+          width="100"
         />
         <img
           src="../assets/oficina_4.jpg"
           alt="Silla Oficina"
-          height="150"
-          width="150"
+          height="100"
+          width="100"
+        />
+        <img
+          src="../assets/oficina_5.jpg"
+          alt="Silla Oficina"
+          height="100"
+          width="100"
         />
       </div>
     </div>
@@ -41,9 +47,8 @@
           >
             -
           </button>
-          
+
           <input class="cantidad" type="text" name="name" :value="contador" />
-          <br>
           <button
             class="btn"
             @click="cambiarContador('1')"
@@ -55,10 +60,11 @@
           <br />
         </div>
         <button class="boton"><span></span> AÑADIR CARRITO</button>
-        
       </section>
-      <hr />
+
       <section class="txt_articulo">
+        <hr />
+        <h3>Caracteristicas</h3>
         <ul>
           <li>
             Dimensiones - Alto: 104,5-113 cm. / Ancho: 63 cm. / Fondo: 46 cm. /
@@ -83,8 +89,8 @@
           <li>GASTOS DE ENVÍO GRATUITOS A LA PENÍNSULA</li>
           <li>Silla Ergonómica nueva para teletrabajar</li>
         </ul>
+        <hr />
       </section>
-      <hr />
     </div>
   </div>
 </template>
@@ -110,7 +116,6 @@ export default {
 
 
 <style scoped >
-
 div .container_producto {
   display: flex;
   flex-direction: row;
@@ -153,7 +158,12 @@ h1 {
 }
 h2 {
   font-size: 1.7rem;
-  color: #1abc9c;
+  color: #087e8b;
+}
+hr {
+  border: 0px;
+  height: 1px;
+  background-color: #000000;
 }
 span.iva {
   font-size: 1rem;
@@ -173,10 +183,8 @@ span.iva {
 }
 .btn {
   width: 1.8rem;
-  
 }
 .boton {
-  
   margin-top: 30px;
   margin-bottom: 30px;
 
