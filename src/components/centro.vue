@@ -65,6 +65,15 @@
       <section class="txt_articulo">
         <hr />
         <h3>Caracteristicas</h3>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/ZL8bRCjdvR8"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
         <ul>
           <li>
             Dimensiones - Alto: 104,5-113 cm. / Ancho: 63 cm. / Fondo: 46 cm. /
@@ -89,6 +98,7 @@
           <li>GASTOS DE ENVÍO GRATUITOS A LA PENÍNSULA</li>
           <li>Silla Ergonómica nueva para teletrabajar</li>
         </ul>
+        
         <hr />
       </section>
     </div>
@@ -121,9 +131,7 @@ div .container_producto {
   flex-direction: row;
   justify-content: space-evenly;
 }
-div .txt_articulo {
-  color: #087e8b;
-}
+
 div.descripcion {
   margin: 0px;
   padding: 0px;
@@ -135,6 +143,10 @@ div.precio_descuento {
   flex-direction: column;
   justify-content: space-between;
   margin: 10px;
+}
+iframe{
+  display:flex;
+  margin-left: 24px;
 }
 .minifotos {
   display: flex;

@@ -6,7 +6,7 @@
       <ul>
         <li>Calle Sin nombre, 2</li>
         <li>Murcia</li>
-        <li>C.P: 30012</li>
+        <li>30012</li>
       </ul>
     </div>
     <div class="contacto">
@@ -34,7 +34,7 @@
         Lunes a Viernes de 10:00 a 14:00h y de 17:00 a 20:00h. Sábados de 10:00
         a 13:30.
       </p>
-      <span>Horario Cargetana</span>
+      <span>Horario Cartagena</span>
       <p>
         Lunes a Viernes de 10:00 a 14:00h y de 17:00 a 20:00h. Sábados de 09:00
         a 14:00. Domingos de 12: a 16:00.
