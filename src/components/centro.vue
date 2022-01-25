@@ -130,12 +130,10 @@ div.descripcion {
   display: flex;
   flex-direction: column;
 }
-
 div.precio_descuento {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
   margin: 10px;
 }
 .minifotos {
@@ -152,7 +150,6 @@ hr {
   height: 1px;
   background-color: #000000;
 }
-
 h1 {
   font-size: 2.2rem;
 }
@@ -187,7 +184,6 @@ span.iva {
 .boton {
   margin-top: 30px;
   margin-bottom: 30px;
-
   border: 0px;
   width: 180px;
   height: 55px;
