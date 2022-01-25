@@ -79,6 +79,7 @@ export default {
 
 </script>
 
+
 <style scoped >
 .container_producto,
 div .container_producto {
@@ -128,11 +129,10 @@ span.iva {
   text-align: center;
   width: 2rem;
   font-size: 1.2rem;
-  border: 1px solid #d8d8d8;
+  border: 1px solid #9A9AAC;
 }
 .btn {
-  border: 1px solid #d8d8d8;
-  width: 1.8rem;
+ width: 1.8rem;
 }
 button:focus, input:focus {
   outline: 0;
